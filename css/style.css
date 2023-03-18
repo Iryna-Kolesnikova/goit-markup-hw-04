@@ -39,6 +39,9 @@ ul {
   --logo-footer-color: #f4f4fd;
   --card-color: #ffffff;
   --footer-bg-btn: #31d0aa;
+  --icon-color: #8e8f99;
+  --shadow-color: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /*  =================== HEAD  =================== */
@@ -49,9 +52,9 @@ ul {
 .header {
   background-color: var(--hero-color);
   border-bottom: 1px solid var(--last-color);
+  box-shadow: var(--shadow-color);
 }
 .container {
-  /* outline: solid 5px palevioletred; */
   margin: 0 auto;
   width: 1158px;
   padding-left: 15px;
@@ -160,10 +163,12 @@ ul {
   display: block;
   border: none;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero {
   background: var(--brand-lite-color);
@@ -205,7 +210,18 @@ ul {
 .list-page .advantages-items + .advantages-items {
   margin-left: 24px;
 }
-
+.advantages-box {
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantages-box-item {
+}
 /* ========================== WHAT ARE WE DOING=================*/
 .caption-section {
   font-weight: 700;
@@ -226,6 +242,10 @@ ul {
   margin-right: 24px;
   background-color: var(--card-color);
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
+}
+.chous:hover {
+  box-shadow: var(--shadow-color);
 }
 .chous:nth-child(4n) {
   margin-right: 0;
@@ -301,6 +321,11 @@ ul {
   padding: 12px 24px;
   border: 1px solid var(--last-color);
 }
+.btn-portfolio:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .btn-portfolio:hover,
 .btn-portfolio:focus {
   color: var(--hero-color);
@@ -330,6 +355,9 @@ ul {
   border: 1px solid var(--last-color);
   border-width: 0px 1px 1px 1px;
   padding: 32px 16px;
+}
+.card-text:hover {
+  box-shadow: var(--shadow-color);
 }
 .examples-list {
   margin-bottom: 120px;
@@ -365,7 +393,7 @@ ul {
 .customers-item {
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -382,13 +410,13 @@ ul {
   margin-left: 24px;
 }
 .customers-icon {
-  fill: tomato;
+  fill: var(--icon-color);
 }
 .customers-icon:hover {
   fill: var(--hover-color);
 }
 .customers-item:hover .customers-link .customers-icon {
-  fill: #31d0aa;
+  fill: #404bbf;
 }
 /* ============================FOOTER============================== */
 .footer-style {
@@ -427,7 +455,6 @@ ul {
 }
 .footer-soc-list {
   display: inline-flex;
-  /* justify-content: center; */
   gap: 16px;
 }
 .footer-soc-item {
