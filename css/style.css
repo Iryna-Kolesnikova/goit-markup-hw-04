@@ -183,6 +183,9 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ==================ADVANTAGES================ */
@@ -211,7 +214,6 @@ ul {
   margin-left: 24px;
 }
 .advantages-box {
-  width: 264px;
   height: 112px;
   background: #f4f4fd;
   border-radius: 4px;
@@ -243,10 +245,9 @@ ul {
   background-color: var(--card-color);
   text-align: center;
   border-radius: 0px 0px 4px 4px;
-}
-.chous:hover {
   box-shadow: var(--shadow-color);
 }
+
 .chous:nth-child(4n) {
   margin-right: 0;
 }
@@ -321,15 +322,14 @@ ul {
   padding: 12px 24px;
   border: 1px solid var(--last-color);
 }
-.btn-portfolio:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
   color: var(--hero-color);
-  background: var(--hover-color);
+  background-color: var(--hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: var(--hover-color);
 }
 .btn-list .btn-item + .btn-item {
   margin-left: 24px;
@@ -343,7 +343,7 @@ ul {
   flex-wrap: wrap;
 }
 .list-positiv {
-  width: 264px;
+  width: calc((100%-72px) / 4);
 }
 
 .work-items {
@@ -351,14 +351,18 @@ ul {
   margin-right: 24px;
   margin-bottom: 48px;
 }
+.link-items:hover {
+  box-shadow: var(--shadow-color);
+  display: block;
+}
 .card-text {
   border: 1px solid var(--last-color);
   border-width: 0px 1px 1px 1px;
   padding: 32px 16px;
 }
-.card-text:hover {
-  box-shadow: var(--shadow-color);
-}
+/* .card-text:hover {
+
+} */
 .examples-list {
   margin-bottom: 120px;
 }
@@ -373,6 +377,10 @@ ul {
 }
 
 /* ===========================CUSTOMERS========================== */
+.customers {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
 .customers-title {
   font-weight: 700;
   font-size: 36px;
@@ -391,21 +399,9 @@ ul {
   align-items: center;
 }
 .customers-item {
-  width: 168px;
-  height: 88px;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: calc((100%-120px) / 6);
 }
-.customers-item:hover {
-  border: 1px solid var(--hover-color);
-}
-.customers-all {
-  padding-bottom: 120px;
-  padding-top: 120px;
-}
+
 .customers-list .customers-item + .customers-item {
   margin-left: 24px;
 }
@@ -418,6 +414,18 @@ ul {
 .customers-item:hover .customers-link .customers-icon {
   fill: #404bbf;
 }
+.customers-link {
+  height: 88px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customers-link:hover {
+  border: 1px solid var(--hover-color);
+}
+
 /* ============================FOOTER============================== */
 .footer-style {
   background: var(--brand-lite-color);
@@ -461,7 +469,6 @@ ul {
   height: 40px;
   width: 40px;
   gap: 24;
-  display: flex;
 }
 .footer-soc-link {
   height: 100%;
