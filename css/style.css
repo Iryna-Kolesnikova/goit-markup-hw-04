@@ -343,7 +343,7 @@ ul {
   flex-wrap: wrap;
 }
 .list-positiv {
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .work-items {
@@ -360,9 +360,7 @@ ul {
   border-width: 0px 1px 1px 1px;
   padding: 32px 16px;
 }
-/* .card-text:hover {
 
-} */
 .examples-list {
   margin-bottom: 120px;
 }
