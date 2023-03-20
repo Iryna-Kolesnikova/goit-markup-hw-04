@@ -397,7 +397,7 @@ ul {
   align-items: center;
 }
 .customers-item {
-  width: calc((100%-120px) / 6);
+  width: calc((100% - 120px) / 6);
 }
 
 .customers-list .customers-item + .customers-item {
