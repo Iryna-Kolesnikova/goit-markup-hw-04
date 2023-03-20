@@ -1,5 +1,6 @@
 .link {
   text-decoration: none;
+  display: block;
 }
 .list {
   list-style: none;
@@ -222,8 +223,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.advantages-box-item {
-}
+
 /* ========================== WHAT ARE WE DOING=================*/
 .caption-section {
   font-weight: 700;
@@ -351,9 +351,9 @@ ul {
   margin-right: 24px;
   margin-bottom: 48px;
 }
+
 .link-items:hover {
   box-shadow: var(--shadow-color);
-  display: block;
 }
 .card-text {
   border: 1px solid var(--last-color);
@@ -389,8 +389,7 @@ ul {
   color: var(--brand-lite-color);
   margin-bottom: 72px;
 }
-.customers-box-list {
-}
+
 .customers-list {
   display: flex;
   justify-content: center;
@@ -446,6 +445,7 @@ ul {
   color: var(--last-color);
   width: 264px;
 }
+
 .soc-list-title {
   font-weight: 500;
   font-size: 16px;
@@ -454,6 +454,7 @@ ul {
   color: var(--card-color);
   margin-bottom: 16px;
 }
+
 .footer-soc-block {
   display: flex;
 }
